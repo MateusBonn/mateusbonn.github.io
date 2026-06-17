@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- =====================================================================
+     EDIT THESE PLACEHOLDERS BEFORE PUBLISHING
+     - NAME ............ "Mateus Bonn"  (confirm your display name)
+     - EMAIL ........... you@example.com
+     - LINKEDIN ........ https://www.linkedin.com/in/your-handle
+     - GITHUB .......... https://github.com/mateusbonn  (already filled)
+     - SITE URL ........ https://your-domain.com  (for canonical + OG)
+     - SOCIAL IMAGE .... 1200x630 PNG for link previews (og:image)
+     Search the file for the word PLACEHOLDER to find every spot.
+     ===================================================================== -->
+
+<title>Mateus Bonn — Backend & Distributed Systems Engineer</title>
+<meta name="description" content="Backend engineer focused on the JVM, event-driven architecture, and resilient service design. Building production-grade pipelines with Java 21, Spring Boot, and Apache Kafka. Open to remote roles." />
+<meta name="author" content="Mateus Bonn Ferreira" />
+<meta name="keywords" content="backend engineer, Java developer, Spring Boot, Apache Kafka, event-driven architecture, distributed systems, remote, AWS, Resilience4j, microservices" />
+<link rel="canonical" href="https://your-domain.com/" /> <!-- PLACEHOLDER: site URL -->
+
+<!-- Open Graph / social previews -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Mateus Bonn Ferreira — Backend & Distributed Systems Engineer" />
+<meta property="og:description" content="Event-driven backend systems on the JVM. Java 21, Spring Boot, Apache Kafka, and resilient-by-default design." />
+<meta property="og:url" content="https://your-domain.com/" /> <!-- PLACEHOLDER -->
+<meta property="og:image" content="https://your-domain.com/preview.png" /> <!-- PLACEHOLDER: 1200x630 -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Mateus Bonn Ferreira — Backend & Distributed Systems Engineer" />
+<meta name="twitter:description" content="Event-driven backend systems on the JVM. Java 21, Spring Boot, Apache Kafka, resilient-by-default." />
+<meta name="twitter:image" content="https://your-domain.com/preview.png" /> <!-- PLACEHOLDER -->
+
+<meta name="theme-color" content="#0E1116" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<!-- Structured data: helps Google understand who you are (rich results) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mateus Bonn",
+  "url": "https://your-domain.com/",
+  "jobTitle": "Backend & Distributed Systems Engineer",
+  "knowsAbout": ["Java", "Spring Boot", "Apache Kafka", "Event-driven architecture", "Distributed systems", "AWS", "PostgreSQL", "Resilience engineering"],
+  "address": { "@type": "PostalAddress", "addressCountry": "BR" },
+  "sameAs": [
+    "https://github.com/mateusbonn",
+    "https://www.linkedin.com/in/your-handle"
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --ink:#0E1116;
+    --panel:#141A21;
+    --panel-2:#1A212B;
+    --line:#262F3A;
+    --line-soft:#1E262F;
+    --text:#D8DFE7;
+    --muted:#8B96A4;
+    --muted-2:#6B7682;
+    --amber:#E8B24A;
+    --amber-dim:#9c7a2f;
+    --teal:#52D1C2;
+    --teal-dim:#2f7a72;
+    --maxw:1080px;
+    --r:14px;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:
+      radial-gradient(900px 500px at 80% -8%, rgba(82,209,194,.07), transparent 60%),
+      radial-gradient(700px 500px at 0% 0%, rgba(232,178,74,.06), transparent 55%),
+      var(--ink);
+    color:var(--text);
+    font-family:"Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{ color:inherit; text-decoration:none; }
+  ::selection{ background:rgba(232,178,74,.28); }
+
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 24px; }
+
+  .mono{ font-family:"JetBrains Mono", ui-monospace, monospace; }
+  .eyebrow{
+    font-family:"JetBrains Mono", monospace;
+    font-size:.72rem; letter-spacing:.18em; text-transform:uppercase;
+    color:var(--teal);
+  }
+
+  /* ---- Nav ---- */
+  header.nav{
+    position:sticky; top:0; z-index:20;
+    backdrop-filter:saturate(140%) blur(10px);
+    background:rgba(14,17,22,.72);
+    border-bottom:1px solid var(--line-soft);
+  }
+  .nav-inner{ display:flex; align-items:center; justify-content:space-between; height:62px; }
+  .brand{ font-family:"Space Grotesk", sans-serif; font-weight:700; letter-spacing:-.01em; font-size:1.05rem; }
+  .brand b{ color:var(--amber); }
+  .nav-links{ display:flex; gap:28px; align-items:center; }
+  .nav-links a{ font-size:.9rem; color:var(--muted); transition:color .15s; }
+  .nav-links a:hover{ color:var(--text); }
+  .nav-cta{
+    border:1px solid var(--line); border-radius:999px; padding:8px 16px;
+    color:var(--text)!important; font-size:.85rem;
+  }
+  .nav-cta:hover{ border-color:var(--amber); color:var(--amber)!important; }
+  @media(max-width:640px){ .nav-links a:not(.nav-cta){ display:none; } }
+
+  /* ---- Sections ---- */
+  .section{ padding:96px 0; border-top:1px solid var(--line-soft); }
+  .section-head{ margin-bottom:44px; max-width:640px; }
+  .section-head h2{
+    font-family:"Space Grotesk", sans-serif; font-weight:700;
+    font-size:clamp(1.6rem, 3.4vw, 2.3rem); line-height:1.15; letter-spacing:-.02em;
+    margin:12px 0 0;
+  }
+  .section-head p{ color:var(--muted); margin:14px 0 0; font-size:1.02rem; }
+
+  /* ---- Hero ---- */
+  .hero{ padding:78px 0 64px; }
+  .hero h1{
+    font-family:"Space Grotesk", sans-serif; font-weight:700;
+    font-size:clamp(2.1rem, 5.4vw, 3.75rem); line-height:1.06; letter-spacing:-.03em;
+    margin:18px 0 0; max-width:18ch;
+  }
+  .hero h1 .hl{ color:var(--amber); }
+  .hero .lede{ color:var(--muted); font-size:clamp(1rem,1.6vw,1.18rem); margin:22px 0 0; max-width:60ch; }
+  .hero-actions{ display:flex; gap:14px; flex-wrap:wrap; margin-top:34px; }
+  .btn{
+    display:inline-flex; align-items:center; gap:9px;
+    padding:13px 22px; border-radius:999px; font-weight:600; font-size:.95rem;
+    transition:transform .12s ease, box-shadow .2s, background .2s, border-color .2s;
+  }
+  .btn-primary{ background:var(--amber); color:#1a1304; box-shadow:0 8px 30px -12px rgba(232,178,74,.6); }
+  .btn-primary:hover{ transform:translateY(-2px); }
+  .btn-ghost{ border:1px solid var(--line); color:var(--text); }
+  .btn-ghost:hover{ border-color:var(--teal); color:var(--teal); transform:translateY(-2px); }
+  .status{
+    display:inline-flex; align-items:center; gap:9px;
+    font-family:"JetBrains Mono", monospace; font-size:.8rem; color:var(--muted);
+  }
+  .dot-live{ width:8px; height:8px; border-radius:50%; background:var(--teal); box-shadow:0 0 0 0 rgba(82,209,194,.6); animation:pulse 2.4s infinite; }
+  @keyframes pulse{ 0%{box-shadow:0 0 0 0 rgba(82,209,194,.5);} 70%{box-shadow:0 0 0 9px rgba(82,209,194,0);} 100%{box-shadow:0 0 0 0 rgba(82,209,194,0);} }
+
+  /* ---- Pipeline signature ---- */
+  .pipe-card{
+    margin-top:54px; border:1px solid var(--line); border-radius:var(--r);
+    background:linear-gradient(180deg, rgba(26,33,43,.6), rgba(20,26,33,.6));
+    padding:22px 22px 14px;
+    overflow:hidden;
+  }
+  .pipe-card .cap{ display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; }
+  .pipe-card .cap span{ font-family:"JetBrains Mono", monospace; font-size:.74rem; color:var(--muted-2); letter-spacing:.04em; }
+  .pipe-svg{ width:100%; height:auto; display:block; }
+
+  .stage-box{ fill:#10161D; stroke:var(--line); }
+  .stage-box.accent{ stroke:var(--amber-dim); }
+  .stage-label{ fill:var(--text); font-family:"JetBrains Mono", monospace; font-size:14px; }
+  .stage-sub{ fill:var(--muted-2); font-family:"JetBrains Mono", monospace; font-size:11px; }
+  .flow-line{ stroke:var(--line); stroke-width:2; fill:none; }
+  .flow-branch{ stroke:var(--amber-dim); stroke-width:1.6; stroke-dasharray:5 5; fill:none; }
+  .branch-label{ fill:var(--amber); font-family:"JetBrains Mono", monospace; font-size:11px; }
+  .evt{ fill:var(--teal); }
+  @media (prefers-reduced-motion: reduce){ .events{ display:none; } .dot-live{ animation:none; } }
+
+  /* ---- Approach cards ---- */
+  .grid-3{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  @media(max-width:820px){ .grid-3{ grid-template-columns:1fr; } }
+  .card{
+    border:1px solid var(--line); border-radius:var(--r); padding:26px;
+    background:var(--panel); transition:border-color .2s, transform .2s;
+  }
+  .card:hover{ border-color:var(--line); transform:translateY(-3px); }
+  .card .num{ font-family:"JetBrains Mono", monospace; color:var(--teal); font-size:.8rem; }
+  .card h3{ font-family:"Space Grotesk", sans-serif; font-size:1.12rem; margin:12px 0 8px; letter-spacing:-.01em; }
+  .card p{ color:var(--muted); font-size:.95rem; margin:0; }
+
+  /* ---- Stack ---- */
+  .stack-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+  @media(max-width:760px){ .stack-grid{ grid-template-columns:1fr; } }
+  .stack-block{ border:1px solid var(--line-soft); border-radius:var(--r); padding:22px; background:rgba(20,26,33,.5); }
+  .stack-block h3{
+    font-family:"JetBrains Mono", monospace; font-size:.78rem; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 14px; font-weight:500;
+  }
+  .chips{ display:flex; flex-wrap:wrap; gap:9px; }
+  .chip{
+    font-family:"JetBrains Mono", monospace; font-size:.82rem;
+    border:1px solid var(--line); border-radius:8px; padding:6px 11px; color:var(--text);
+    background:#11161D;
+  }
+  .chip.key{ border-color:var(--amber-dim); color:var(--amber); }
+
+  /* ---- Projects ---- */
+  .proj{
+    border:1px solid var(--line); border-radius:var(--r); background:var(--panel);
+    padding:30px; display:grid; grid-template-columns:1.4fr 1fr; gap:30px; align-items:start;
+  }
+  @media(max-width:820px){ .proj{ grid-template-columns:1fr; gap:22px; } }
+  .proj + .proj{ margin-top:22px; }
+  .proj .tag{ font-family:"JetBrains Mono", monospace; font-size:.74rem; color:var(--teal); letter-spacing:.08em; text-transform:uppercase; }
+  .proj h3{ font-family:"Space Grotesk", sans-serif; font-size:1.5rem; letter-spacing:-.02em; margin:10px 0 12px; }
+  .proj p{ color:var(--muted); margin:0 0 18px; }
+  .proj ul{ list-style:none; padding:0; margin:0 0 18px; }
+  .proj li{ position:relative; padding-left:22px; color:var(--text); font-size:.94rem; margin-bottom:10px; }
+  .proj li::before{ content:"→"; position:absolute; left:0; color:var(--amber); font-family:"JetBrains Mono", monospace; }
+  .proj .side{ border-left:1px solid var(--line); padding-left:24px; }
+  @media(max-width:820px){ .proj .side{ border-left:none; padding-left:0; border-top:1px solid var(--line); padding-top:20px; } }
+  .proj .side h4{ font-family:"JetBrains Mono", monospace; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin:0 0 12px; font-weight:500; }
+  .proj-links{ display:flex; gap:14px; flex-wrap:wrap; margin-top:6px; }
+  .proj-links a{ font-family:"JetBrains Mono", monospace; font-size:.85rem; color:var(--teal); border-bottom:1px solid transparent; transition:border-color .15s; }
+  .proj-links a:hover{ border-color:var(--teal); }
+  .placeholder-note{ font-family:"JetBrains Mono", monospace; font-size:.74rem; color:var(--amber-dim); margin-top:8px; }
+
+  /* ---- Contact ---- */
+  .contact{ text-align:center; }
+  .contact h2{ font-family:"Space Grotesk", sans-serif; font-weight:700; font-size:clamp(1.8rem,4vw,2.6rem); letter-spacing:-.02em; margin:14px 0 0; }
+  .contact p{ color:var(--muted); max-width:46ch; margin:16px auto 0; }
+  .contact-links{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top:30px; }
+
+  footer.foot{ border-top:1px solid var(--line-soft); padding:30px 0; }
+  .foot-inner{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; color:var(--muted-2); font-size:.84rem; font-family:"JetBrains Mono", monospace; }
+
+  :focus-visible{ outline:2px solid var(--teal); outline-offset:3px; border-radius:6px; }
+</style>
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">mateus<b>.</b>bonn</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#approach">Approach</a>
+      <a href="#stack">Stack</a>
+      <a href="#work">Work</a>
+      <a class="nav-cta" href="#contact">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Backend &amp; Distributed Systems · Brazil · Open to remote</p>
+      <h1>I build event-driven backend systems that <span class="hl">stay up when things go wrong.</span></h1>
+      <p class="lede">Backend engineer working on the JVM — distributed messaging, resilient service design, and clean architecture. Currently building production-grade pipelines with Java 21, Spring Boot, and Apache Kafka.</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#work">See my work
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="https://github.com/mateusbonn" target="_blank" rel="noopener">GitHub</a>
+        <span class="status"><span class="dot-live" aria-hidden="true"></span>available for new projects</span>
+      </div>
+
+      <!-- SIGNATURE: the RCA pipeline -->
+      <figure class="pipe-card" aria-labelledby="pipe-title">
+        <div class="cap">
+          <span id="pipe-title">// event-driven rca pipeline</span>
+          <span>log → kafka → analysis → store</span>
+        </div>
+        <svg class="pipe-svg" viewBox="0 0 1000 250" role="img" xmlns="http://www.w3.org/2000/svg">
+          <title>Architecture of an event-driven root-cause-analysis pipeline</title>
+          <desc>An incoming log POST is published to a Kafka topic, consumed by a Spring AI worker, analyzed by an LLM, and stored in PostgreSQL. A dashed branch shows retry, circuit breaker, and dead-letter-queue handling.</desc>
+
+          <!-- main flow line -->
+          <path id="flow" class="flow-line" d="M160 80 H840" />
+
+          <!-- moving events (hidden when reduced-motion) -->
+          <g class="events" aria-hidden="true">
+            <circle class="evt" r="4.5"><animateMotion dur="3.4s" repeatCount="indefinite" begin="0s"><mpath href="#flow"/></animateMotion></circle>
+            <circle class="evt" r="4.5"><animateMotion dur="3.4s" repeatCount="indefinite" begin="-1.1s"><mpath href="#flow"/></animateMotion></circle>
+            <circle class="evt" r="4.5"><animateMotion dur="3.4s" repeatCount="indefinite" begin="-2.2s"><mpath href="#flow"/></animateMotion></circle>
+          </g>
+
+          <!-- stages -->
+          <g>
+            <rect class="stage-box" x="20"  y="52" width="140" height="56" rx="10"/>
+            <text class="stage-label" x="90"  y="78" text-anchor="middle">POST /logs</text>
+            <text class="stage-sub"   x="90"  y="95" text-anchor="middle">ingest</text>
+
+            <rect class="stage-box accent" x="225" y="52" width="140" height="56" rx="10"/>
+            <text class="stage-label" x="295" y="78" text-anchor="middle">Kafka</text>
+            <text class="stage-sub"   x="295" y="95" text-anchor="middle">log-events</text>
+
+            <rect class="stage-box" x="430" y="52" width="140" height="56" rx="10"/>
+            <text class="stage-label" x="500" y="78" text-anchor="middle">Worker</text>
+            <text class="stage-sub"   x="500" y="95" text-anchor="middle">Spring AI</text>
+
+            <rect class="stage-box" x="635" y="52" width="140" height="56" rx="10"/>
+            <text class="stage-label" x="705" y="78" text-anchor="middle">LLM</text>
+            <text class="stage-sub"   x="705" y="95" text-anchor="middle">Bedrock · Ollama</text>
+
+            <rect class="stage-box" x="840" y="52" width="140" height="56" rx="10"/>
+            <text class="stage-label" x="910" y="78" text-anchor="middle">PostgreSQL</text>
+            <text class="stage-sub"   x="910" y="95" text-anchor="middle">rca store</text>
+          </g>
+
+          <!-- resilience branch -->
+          <path class="flow-branch" d="M500 108 V165 H300 V190" />
+          <rect class="stage-box accent" x="200" y="190" width="200" height="44" rx="10"/>
+          <text class="branch-label" x="300" y="217" text-anchor="middle">retry · circuit breaker · DLQ</text>
+        </svg>
+      </figure>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section class="section" id="approach">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">How I work</p>
+        <h2>I treat reliability as a feature, not an afterthought.</h2>
+        <p>Most of the interesting work in backend systems happens at the edges — what happens when a message is redelivered, when a downstream call fails, or when you need to swap a provider without touching business logic. These are the defaults I build with.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <span class="num">01</span>
+          <h3>Resilient by default</h3>
+          <p>Circuit breakers, retries with exponential backoff, and dead-letter routing — so a single bad event degrades gracefully instead of taking the service down.</p>
+        </article>
+        <article class="card">
+          <span class="num">02</span>
+          <h3>Idempotent &amp; safe to retry</h3>
+          <p>Deduplication with SHA-256 hashing means a redelivered message is processed exactly once. At-least-once delivery stops being a liability.</p>
+        </article>
+        <article class="card">
+          <span class="num">03</span>
+          <h3>Provider-agnostic design</h3>
+          <p>One interface, swappable implementations. Switch an LLM between local Ollama and AWS Bedrock through a build profile — zero code changes, zero lock-in.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section" id="stack">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Tools</p>
+        <h2>The stack I reach for.</h2>
+        <p>Grouped by what they do, not by buzzword count. Highlighted items are where I'm strongest.</p>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-block">
+          <h3>Language &amp; Frameworks</h3>
+          <div class="chips">
+            <span class="chip key">Java 21</span>
+            <span class="chip key">Spring Boot 3.4</span>
+            <span class="chip">Spring AI</span>
+            <span class="chip">JPA / Hibernate</span>
+            <span class="chip">Maven</span>
+          </div>
+        </div>
+        <div class="stack-block">
+          <h3>Messaging &amp; Streaming</h3>
+          <div class="chips">
+            <span class="chip key">Apache Kafka</span>
+            <span class="chip">Event-driven design</span>
+            <span class="chip">Dead Letter Queues</span>
+            <span class="chip">Idempotent consumers</span>
+          </div>
+        </div>
+        <div class="stack-block">
+          <h3>Resilience &amp; Patterns</h3>
+          <div class="chips">
+            <span class="chip key">Resilience4j</span>
+            <span class="chip">Circuit Breaker</span>
+            <span class="chip">Retry / Backoff</span>
+            <span class="chip">SOLID</span>
+          </div>
+        </div>
+        <div class="stack-block">
+          <h3>Data, Cloud &amp; AI</h3>
+          <div class="chips">
+            <span class="chip key">PostgreSQL</span>
+            <span class="chip">AWS Bedrock</span>
+            <span class="chip">Ollama</span>
+            <span class="chip">Docker Compose</span>
+            <span class="chip">Git / GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects, with the decisions behind them.</h2>
+        <p>I care less about the feature list and more about why each piece is built the way it is.</p>
+      </div>
+
+      <!-- Featured: RCA pipeline -->
+      <article class="proj">
+        <div>
+          <span class="tag">Event-driven · Java 21 · Kafka</span>
+          <h3>Root Cause Analysis Pipeline</h3>
+          <p>A backend service that ingests application logs, routes them through Kafka, and uses an LLM to produce structured root-cause analyses — designed end-to-end for resilience and token-cost control.</p>
+          <ul>
+            <li>Thin Kafka boundary delegating to a focused analysis service — one interface, one implementation, clear seams.</li>
+            <li>SHA-256 idempotency so redelivered events never double-process or double-spend on LLM calls.</li>
+            <li>Resilience4j circuit breaker around the LLM, with backoff retries and DLQ routing for poison messages.</li>
+            <li>Stacktrace truncation to cap token cost before each model call.</li>
+            <li>Provider switch between local Ollama and AWS Bedrock via Maven profiles — no code change.</li>
+          </ul>
+          <div class="proj-links">
+            <a href="https://github.com/MateusBonn/async-pipeline-RCA" target="_blank" rel="noopener">View source ↗</a>
+            <!-- PLACEHOLDER: add a live demo or write-up link if you have one -->
+          </div>
+        </div>
+        <div class="side">
+          <h4>Built with</h4>
+          <div class="chips">
+            <span class="chip">Java 21</span>
+            <span class="chip">Spring Boot 3.4</span>
+            <span class="chip">Spring AI</span>
+            <span class="chip">Apache Kafka</span>
+            <span class="chip">Resilience4j</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">AWS Bedrock</span>
+            <span class="chip">Docker</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PLACEHOLDER project slots — duplicate or delete as needed -->
+      <article class="proj">
+        <div>
+          <span class="tag">Your next project</span>
+          <h3>Project title goes here</h3>
+          <p>One or two sentences on what it does and who it's for. Replace this card with a real project, or remove it.</p>
+          <ul>
+            <li>A standout technical decision or trade-off you made.</li>
+            <li>A result or constraint you handled well.</li>
+          </ul>
+          <div class="proj-links">
+            <a href="#" target="_blank" rel="noopener">View source ↗</a>
+          </div>
+          <p class="placeholder-note">// PLACEHOLDER — replace with a real project</p>
+        </div>
+        <div class="side">
+          <h4>Built with</h4>
+          <div class="chips">
+            <span class="chip">Tech</span>
+            <span class="chip">Tech</span>
+            <span class="chip">Tech</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's build something reliable.</h2>
+      <p>Open to remote backend and distributed-systems roles. The fastest way to reach me is email or LinkedIn.</p>
+      <div class="contact-links">
+        <!-- PLACEHOLDER: replace email + LinkedIn -->
+        <a class="btn btn-primary" href="mateusbonn.mbf@gmail.com">Email me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/mateusbonn/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/mateusbonn" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span>© <span id="yr"></span> Mateus Bonn</span>
+    <span>Built from scratch · no template</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
